@@ -2,7 +2,7 @@
 **Hanged.io**
 **********
 
-It is a multithreaded client/server Hangman game based on console which uses Java Socket programming. A server listens for connection requests from clients across the network or even from the same machine. Clients know how to connect to the server via an IP address and port number. After connecting to the server, the client gets to choose his/her username for the game. The clients can send a message in the chatbox to just chat or they can initialize the game with the specified command.
+It is a multithreaded client/server Hangman game that are GUI-based which uses Java Socket programming. A server listens for connection requests from clients across the network or even from the same machine. Clients know how to connect to the server via an IP address and port number. After connecting to the server, the client gets to choose his/her username for the game. The clients can send a message in the chatbox to just chat or they can initialize the game with the specified command.
 
 **********
 **Project Team Members**
