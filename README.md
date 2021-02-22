@@ -1,37 +1,32 @@
 **********
-**About:**
+**Hanged.io**
 **********
 
-It is a multithreaded client/server ChatServer based on console which uses Java Socket programming. A server listens for connection requests from clients across the network or even from the same machine. Clients know how to connect to the server via an IP address and port number. After connecting to the server, the client gets to choose his/her username on the chat room. The client sends a message, the message is sent to the server using ObjectOutputStream in java. After receiving the message from the client, the server broadcasts the message if it is not a private message. And if it is a private message which is detect using ‘@’ followed by a valid username, then send the message only to that user. Java object serialization to transfer the messages.
+It is a multithreaded client/server Hangman game based on console which uses Java Socket programming. A server listens for connection requests from clients across the network or even from the same machine. Clients know how to connect to the server via an IP address and port number. After connecting to the server, the client gets to choose his/her username for the game. The clients can send a message in the chatbox to just chat or they can initialize the game with the specified command.
 
 *****************
 **Instructions:**
 *****************
 
-**Client**
+**Netbeans Installation**
 
-To start the Client in console mode use one of the following command
- 1. java Client
- 2. java Client username
- 3. java Client username portNumber
- 4. java Client username portNumber serverAddress
-
-at the console prompt
-If the portNumber is not specified 1500 is used
-If the serverAddress is not specified "localHost" is used
-If the username is not specified "Anonymous" is used
+1. Clone this repository
+2. Open the hanged.io-server project folder
+3. Open the hanged.io-client project folder
+4. If a warning exist, click the resolve button and guide the required `hanged.io-server` project directory to he correct one.
+5. Now you can run the projects. (make sure to start the server first and then clients)
 
 **Server**
 
-To run as a console application
- 1. java Server
- 2. java Server portNumber
-If the port number is not specified 1500 is used
+1. Run the project or just launch the `.jar` file
+2. Click on the start button to start the server
 
 **Chat**
 
-While in client console:
+While in the chat room:
 1. Simply type the message to send broadcast to all active clients
-2. Type '@username<space>yourmessage' without quotes to send message to desired client
-3. Type 'WHOISIN' without quotes to see list of active clients
-4. Type 'LOGOUT' without quotes to logoff from server
+2. Type `!HELP` for any help regading the command function
+3. Type `!START` to start the game
+4. Type `~your_answer_here` to guess the current game
+5. Type `!HINT` for any help with the game
+7. Type `!LOGOUT` to logoff from server
